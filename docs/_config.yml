@@ -1,7 +1,7 @@
 permalink: /:month-:day-:year/:title.html
 
 url: https://stanfordvisionsystems.github.io/StanfordVisionSystems/
-# baseurl: /StanfordVisionSystems
+baseurl: https://stanfordvisionsystems.github.io/StanfordVisionSystems/
 
 # Theme settings
 theme:
