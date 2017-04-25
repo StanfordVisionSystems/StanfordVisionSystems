@@ -1,5 +1,8 @@
 permalink: /:month-:day-:year/:title.html
 
+url: https://stanfordvisionsystems.github.io
+baseurl /:StanfordVisionSystems
+
 # Theme settings
 theme:
 
@@ -20,3 +23,4 @@ theme:
 
   # Number of words to display in post summaries
   featured_wordcount: 20
+
