@@ -1,10 +1,10 @@
 permalink: /:month-:day-:year/:title.html
 
-url: https://stanfordvisionsystems.github.io/StanfordVisionSystems/
-baseurl: https://stanfordvisionsystems.github.io/StanfordVisionSystems/
-
 # Theme settings
 theme:
+
+  url: https://stanfordvisionsystems.github.io 
+  baseurl: /StanfordVisionSystems
 
   # Site name
   site_name: Stanford Vision Systems
