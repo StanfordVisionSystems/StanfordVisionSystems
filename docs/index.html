@@ -1,30 +1,100 @@
 ---
-layout: default
+layout: index
 title: Home
 ---
 
-<div id="home">
+<div class="main-header">
+  Stanford Vision Systems
+  <div style="font-size:10pt;">
+    Vision inspired systems research
+  </div>
+</div>
 
-	<div id="intro">
-		{% include home.html %}
-	</div>
+{% include navbar.html %}
 
-	<div id="featured">
-		<h3>Latest</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 hidden-xs banner">
+      <div style="height:15px;"></div>
+      <a href="{{ site.baseurl }}/imgs/banner.jpg">
+        <img src="{{ site.baseurl }}/imgs/banner_small.jpg" alt="banner" style="width:100%;border-radius:10px;">
+      </a>
+    </div>
+  </div>
 
-		{% for post in site.posts offset: 0 limit: site.theme.homepage_featured %}
-			{% include post_featured.html %}
-		{% endfor %}
-	</div>
+  <div style="height:15px;"></div>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="highlight">
+        <div class="main-section-header">About</div>
+        <div class="text">
+          We are a group of computer vision and systems researchers at Stanford
+          University whose focus is on building next generation systems for
+          video/image processing. Unlike typical machine learning or computer systems
+          groups, our work crosses the boundary between theory and implementation.
+          This trait has enabled us to produce useful systems that are orders of
+          magnitude higher performance than the state of the art. 
+        </div>
+      </div>
+    </div>
 
-	<div id="posts">
-		<h3>Older thoughts</h3>
+    <div class="col-md-6">
+      <div class="main-section-header">Recent News</div>
+      <div class="text">
+        Bibity bop went SIGGRAPH asia to present his paper on blah blah blah
+        with his coauthors sadf fds and asdf asdf adsf asd. Their
+        paper, <a href=""> goo and go go go</a>, won best paper!
+      </div>
+      <div class="text">
+        Check out their project github <a href="">here</a>.
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="main-section-header">Members</div>
+  <div>Photos go here.</div>
 
-		<dl>
-		  {% for post in site.posts offset: site.theme.homepage_featured limit: site.theme.homepage_posts %}
-				{% include post_summary.html %}
-		  {% endfor %}
-		</dl>
-		<p><a href="/archive.html" class="more">View all posts »</a></p>
-	</div>
+  <div class="main-section-header">Members</div>
+  <div>Photos go here.</div>
+     
+  <div class="main-section-header">Recent Publications <span>[<a href="">full list</a></span>]</div>
+  <div class="text">
+    Daniel Kang, <span style="text-decoration:underline;">John
+      Emmons</span>, Firas Abuzaid, Peter Bailis, Matei
+    Zaharia. "<a href="https://arxiv.org/pdf/1703.02529.pdf">Optimizing
+      Deep CNN-Based Queries over Video Streams at Scale</a>". VLDB (under
+    review).  Mar. 2017. [<a href="files/john_emmons_noscope.pdf">pdf</a>]
+  </div>
+
+  <div class="text">
+    Hongyi Xin, Sunny Nahar, Richard Zhu, <span style="text-decoration:underline;">John Emmons</span>, Gennady Pekhimenko, Carl Kingsford, Can
+    Alkan, and Onur
+    Mutlu. "<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/11/13/bioinformatics.btv670.abstract">Optimal
+      Seed Solver: Optimizing Seed Selection in Read Mapping</a>". Oxford
+    Bioinformatics,
+    Nov. 2015. [<a href="files/john_emmons_oss_bioinfo2015.pdf">pdf</a>][<a href="files/john_emmons_oss_cmu_technical_report.pdf">supp</a>]
+  </div>
+
+  <div class="text">
+    Hongyi Xin, John Greth, <span style="text-decoration: underline;">John
+      Emmons</span>, Gennady Pekhimenko, Carl Kingsford, Can Alkan, and Onur
+    Mutlu. "<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/01/10/bioinformatics.btu856.abstract">Shifted
+      Hamming Distance: A Fast and Accurate SIMD-Friendly Filter for Local
+      Alignment in Read Mapping</a>". Oxford Bioinformatics,
+    Dec. 2014. [<a href="files/john_emmons_bioinfo2014.pdf">pdf</a>]
+  </div>
+
+  <div class="text">
+    Igor A. Ivanov, Anatoli S. Kheifets, Klaus
+    Bartschat, <span style="text-decoration: underline;">John Emmons</span>,
+    Sean M. Buczek, Elena V. Gryzlova, and Alexei
+    N. Grum-Grzhimailo. <a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.90.043401">"Displacement
+      effect in strong-field atomic ionization by an XUV pulse"</a>. Physical
+    Review Letters A. Oct. 2014. [<a title="Phys. Rev. A 90, 043401" href="files/john_emmons_PhysRevA.90.043401.pdf">pdf</a>]
+  </div>
+  
+  <div style="height:15px;"></div>
+  
 </div>
