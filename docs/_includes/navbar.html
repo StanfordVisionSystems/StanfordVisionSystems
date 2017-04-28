@@ -1,9 +1,21 @@
 <div class="nav">
   <div class="container">
-    <span class="nav-btn"><a href="">Blog</a></span>
-    <span class="nav-btn"><a href="">Contact</a></span>
-    <span class="nav-btn"><a href="">Projects</a></span>
-    <span class="nav-btn"><a href="">Seminar</a></span>
+    <div class="row">
+      <div class="col-md-12 hidden-sm hidden-xs">
+        <span class="nav-btn"><a href="{{ site.baseurl }}/">Home</a></span>
+        <!-- <span class="nav-btn"><a href="{{ site.baseurl }}">Blog</a></span> -->
+        <!-- <span class="nav-btn"><a href="{{ site.baseurl }}">Projects</a></span> -->
+        <span class="nav-btn"><a href="{{ site.baseurl}}{% post_url 2009-06-02-seminar-schedule %}">Seminar</a></span>
+        <span class="nav-btn"><a href="mailto:jemmons@stanford.edu">Contact</a></span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+    <span class="nav-btn nav-btn-sm"><a href="{{ site.baseurl }}/">Home</a></span>
+    <!-- <span class="nav-btn nav-btn-sm"><a href="{{ site.baseurl }}">Blog</a></span> -->
+    <!-- <span class="nav-btn nav-btn-sm"><a href="{{ site.baseurl }}">Projects</a></span> -->
+    <span class="nav-btn nav-btn-sm"><a href="{{ site.baseurl}}{% post_url 2009-06-02-seminar-schedule %}">Seminar</a></span>
+    <span class="nav-btn nav-btn-sm"><a href="mailto:jemmons@stanford.edu">Contact</a></span>
   </div>
 </div>
-

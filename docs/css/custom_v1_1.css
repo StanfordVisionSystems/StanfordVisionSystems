@@ -24,6 +24,37 @@
     padding-top:0px;
     border-top: double 5px;
     border-bottom: double 5px;
+    border-color: black;
+}
+
+.highlight-phantom{
+    border-top: double 5px;
+    border-bottom: double 0px;
+    border-color: white;
+}
+
+.member {
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 175px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.member .bio {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.member img{
+    height: 150px;
+    border-radius: 100px;
+    border: 3px solid #FFF;
+    box-shadow: 0 0 7px 0px #AAA;
 }
 
 .text{
@@ -40,9 +71,15 @@
 }
 
 .nav-btn {
+    padding-left:50px;
+    padding-right:50px;
     text-align:center;
-    max-width:50px;
-    width:25px;
+}
+
+.nav-btn-sm {
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
 }
 
 .nav-btn a:link{
@@ -61,4 +98,3 @@
 .container{
     max-width:960px;
 }
-
